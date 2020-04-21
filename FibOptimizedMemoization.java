@@ -18,8 +18,8 @@ public class FibOptimizedMemoization {
 
         if (n <= 1)
             return n;
-        else if (fibArray[(int) n] != 0)
-            return fibArray[(int) n];
+        else if (fibArray[(int) n] != 0)   //comment these two lines 
+            return fibArray[(int) n];      // and see the difference with different values of n.
         else {
 
             long fibValue = fib(n - 1) + fib(n - 2);
